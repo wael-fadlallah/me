@@ -9,6 +9,7 @@ export default function Me() {
         <img src={AwesomeMe} className="w-[150px] " alt="" />
       </div>
       <h1 className="mt-4">Wael Fadlallh Elnor</h1>
+      <span className="">Software Engineer</span>
 
       <div className="flex justify-center">
         <a href="https://www.linkedin.com/in/wael-fadl-allah/" target="_blank">
