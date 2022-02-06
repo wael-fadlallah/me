@@ -14,7 +14,7 @@ function App() {
       <Me />
 
       <motion.div drag dragConstraints={windowRef}>
-        <DiReact size={80} />
+        <DiReact size={70} />
       </motion.div>
     </div>
   );
