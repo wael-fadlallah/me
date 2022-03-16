@@ -1,6 +1,6 @@
 env: standard
 runtime: nodejs16
-service: default
+service: about
 handlers:
   - url: /static
     static_dir: dist/static
