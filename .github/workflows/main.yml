@@ -33,7 +33,7 @@ jobs:
         with:
           credentials_json: "${{ secrets.GCP_SA_KEY }}"
 
-      - uses: google-github-actions/deploy-appengine@main
+      - uses: google-github-actions/deploy-appengine@v0
         with:
           working_directory: dist
           version: production
