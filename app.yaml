@@ -2,9 +2,10 @@ env: standard
 runtime: nodejs16
 service: about
 handlers:
-  - url: /(.*\..+)$
+  - url: assets/(.*\.(js))$
     static_files: assets/\1
-    upload: assets/(.*\..+)$
+    upload: assets/(.*\.(js))$
+    mime_type: 'text/javascript'
 
   - url: .*
     static_files: index.html
