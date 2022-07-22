@@ -1,7 +1,5 @@
 env: standard
-runtime: python27
-api_version: 1
-threadsafe: true
+runtime: nodejs16
 service: about
 handlers:
   - url: /
