@@ -13,6 +13,6 @@ handlers:
     static_files: /\1
     upload: .*\.(css)$
 
-  - url: .*
+  - url: /
     static_files: index.html
     upload: index.html
