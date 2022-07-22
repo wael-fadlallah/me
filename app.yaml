@@ -5,7 +5,13 @@ handlers:
   - url: /
     static_files: index.html
     upload: index.html
+    secure: always
 
-  - url: /assets
-    static_dir: /assets
+    - url: /(.*\.js)$
+      static_files: \1
+      upload: (.*\.js)$
+      mime_type: text/javascript
 
+    - url: /(.*\..+)$
+      static_files: \1
+      upload: (.*\..+)$
