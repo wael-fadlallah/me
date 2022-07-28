@@ -1,17 +1,13 @@
 env: standard
 runtime: nodejs16
-service: about
+
 handlers:
   - url: /assets
     static_dir: assets
-    secure: always
 
-  - url: assets/(.*\.(js|css))$
+  - url: /(.*\.(js|css))$
     static_files: assets/\1
     upload: assets/.*\.(json|ico|js|css)$
-    secure: always
-
   - url: .*
     static_files: index.html
     upload: index.html
-    secure: always
