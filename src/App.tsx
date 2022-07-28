@@ -3,6 +3,7 @@ import "./styles/index.css";
 import Me from "./components/Me/Index";
 import { DiReact } from "react-icons/di";
 import { motion } from "framer-motion";
+import Spline from '@splinetool/react-spline';
 
 function App() {
   const windowRef = useRef(null);
@@ -16,6 +17,8 @@ function App() {
       <motion.div drag dragConstraints={windowRef}>
         <DiReact size={70} />
       </motion.div>
+
+      <Spline scene="https://prod.spline.design/3gZjjqfD4QRgcSjI/scene.splinecode" />
     </div>
   );
 }

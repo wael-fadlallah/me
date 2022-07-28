@@ -6,7 +6,7 @@ handlers:
     static_dir: assets
     secure: always
 
-  - url: /(.*\.(js|css))$
+  - url: assets/(.*\.(js|css))$
     static_files: assets/\1
     upload: assets/.*\.(json|ico|js|css)$
     secure: always
