@@ -1,14 +1,17 @@
 env: standard
-runtime: python27
+runtime: nodejs16
 service: about
-api_version: 1
-threadsafe: true
-
 handlers:
-- url: /
-  static_files: index.html
-  upload: index.html
+  - url: /assets
+    static_dir: assets
+    secure: always
 
-- url: /(.*)
-  static_files: assets/\1
-  upload: assets/(.*)
+  - url: assets/(.*\.(js|css))$
+    static_files: assets/\1
+    upload: assets/.*\.(js|css)$
+    secure: always
+
+  - url: .*
+    static_files: index.html
+    upload: index.html
+    secure: always
