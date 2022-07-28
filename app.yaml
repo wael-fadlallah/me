@@ -1,5 +1,6 @@
 env: standard
 runtime: python27
+service: about
 api_version: 1
 threadsafe: true
 
